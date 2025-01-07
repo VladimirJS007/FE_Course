@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main_Flow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="page__flow">
+            <div class="title__flow">Intake Main Flow</div>
+            <div class="text__flow"><span>*</span>Mandatory field</div>
+            <div class="container">
+                <h2>Information</h2>
+                <div class="container-input">
+                    <div class="input-fild">
+                        <label for="intake">Intake Type<span>* (select)</span></label>
+                        <select id="intake">
+                            <option value="refferal">Сhoose a referral</option>
+                            <option value="refferal_1">Refferal 1</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="date-jquery">Enrollment Initiation Date jquery</label>
+                        <input type="date" id="date-jquery">
+                    </div>
+                    <div class="input-fild">
+                        <label for="tel-flow">Mobile No.</label>
+                        <input type="tel" id="tel-flow" autocomplete="tel">
+                    </div>
+                    <div class="input-fild">
+                        <label for="category">Application Category<span>*</span></label>
+                        <select id="category">
+                            <option value="category">Сhoose a category</option>
+                            <option value="category_1">Child Support</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="email-flow">Email</label>
+                        <input type="email" id="email-flow" autocomplete="email">
+                    </div>
+                    <div class="input-fild">
+                        <label for="date-sub">Enrollment Submission Date (Optional)</label>
+                        <input type="date" id="date-sub">
+                    </div>
+                    <div class="input-fild single">
+                        <label for="app-registr">Application Registration (Optional)</label>
+                        <input type="text" id="app-registr" placeholder="APP0000116">
+                    </div>
+                    <div class="input-fild">
+                        <label for="date-req">Additional Information Requested Date (Optional)</label>
+                        <input type="date" id="date-req">
+                    </div>
+                    <div class="checkbox">
+                        <div>
+                            <input id="purged" type="checkbox" value="purged">
+                            <label for="purged">Purged</label>
+                        </div>
+                    </div>
+                    <div class="input-fild">
+                        <label for="days">Remaining Days Before Referral is Purged (Optional)</label>
+                        <input min="1" max="14" type="number" id="days" placeholder="13">
+                    </div>
+                    <div class="input-fild">
+                        <label for="exempt">Exempt from Paternity (Optional) (select)</label>
+                        <input type="number" id="exempt" placeholder="№">
+                    </div>
+                    <div class="input-fild">
+                        <label for="date-fee">Fee Payment Date (Optional)</label>
+                        <input type="date" id="date-fee">
+                    </div>
+                    <div class="input-fild">
+                        <label for="status">Enrollment Status (Optional)</label>
+                        <select id="status">
+                            <option value="status">Сhoose a status</option>
+                            <option value="status_1">Worklisted</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <div>
+                            <input id="app-fee" type="checkbox" value="app-fee">
+                            <label for="app-fee">Application Fee Processed</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Maternity Information</h2>
+                <div class="container-input">
+                    <div class="checkbox">
+                        <div>
+                            <input id="child-support" type="checkbox" value="child-support">
+                            <label for="child-support">Are you requesting child support services for an
+                                unborn child?</label>
+                        </div>
+                    </div>
+                    <div class="input-fild">
+                        <label for="parent">Other known biological parent? (Optional)</label>
+                        <select id="parent">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Official Use</h2>
+                <div class="container-input">
+
+                    <div class="input-fild">
+                        <label for="case-category">Case Category (select)</label>
+                        <select id="case-category">
+                            <option value="active">Active IV-A</option>
+                            <option value="passive">passive</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="indicator">IV-D Indicator<span>*</span></label>
+                        <select id="indicator">
+                            <option value="indicator">Indicator</option>
+                            <option value="indicator1">Non-IV-D</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="only-indicator">Arrears Only Indicator (Optional)</label>
+                        <select id="only-indicator">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="inter-category">Intergovernmental Case Category (Optional)</label>
+                        <select id="inter-category">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="ownership">Assigned County of Ownership (Optional)</label>
+                        <select id="ownership">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="case-type">Intergovernmental Case Type (Optional)</label>
+                        <select id="case-type">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="case-status">Intergovermental Case Status (details)</label>
+                        <select id="case-status">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="case-number">Case Number</label>
+                        <div class="search">
+                            <input id="case-number" type="search" value="Search Case Number" placeholder="Case Number">
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="input-fild">
+                        <label for="app-indicator">Special Handling Indicator for Applicant (Optional)</label>
+                        <select id="app-indicator">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="input-fild">
+                        <label for="referral-number">Referral Number</label>
+                        <div class="search">
+                            <input id="referral-number" type="search" value="Search Referral Number"
+                                placeholder="№ referral">
+                            <input type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="input-fild">
+                        <label for="indicator-parent">Special Handling Indicator for Other Parent
+                            (Optional)</label>
+                        <select id="indicator-parent">
+                            <option value="none">None</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h2>System Information</h2>
+                    <div class="container-input">
+                        <div class="input-fild">
+                            <label for="user">Enrollment Taken by User </label>
+                            <div class="search">
+                                <input id="user" type="search" value="Search Input" placeholder="User name">
+                                <input type="submit" value="">
+                            </div>
+                        </div>
+                        <div class="input-fild">
+                            <label for="supervisor">Intake Supervisor (Optional)</label>
+                            <div class="search">
+                                <input id="supervisor" type="search" value="Search" placeholder="Supervisor">
+                                <input type="submit" value="">
+                            </div>
+                        </div>
+                        <div class="input-fild">
+                            <label for="worker">Worker (Optional)</label>
+                            <div class="search">
+                                <input id="worker" type="search" value="Search Input" placeholder="Worker">
+                                <input type="submit" value="">
+                            </div>
+                        </div>
+                        <div class="input-fild">
+                            <label for="owner">Owner (Optional)</label>
+                            <div class="search">
+                                <input id="owner" type="search" value="Search for" placeholder="Rajaneesh Banal">
+                                <input type="submit" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button__flow"><a href="../index.html">Next</a> </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
